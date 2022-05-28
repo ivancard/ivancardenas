@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="105" viewBox="0 0 105 105">
+  <g id="Grupo_1" data-name="Grupo 1" transform="translate(-240 -35)" style="isolation: isolate">
+    <g id="Rectángulo_1" data-name="Rectángulo 1" transform="translate(240 35)" fill="#efece6" stroke="#707070" stroke-width="3">
+      <rect width="105" height="105" stroke="none"/>
+      <rect x="1.5" y="1.5" width="102" height="102" fill="none"/>
+    </g>
+    <g id="Rectángulo_2" data-name="Rectángulo 2" transform="translate(240 35)" fill="#efece6" stroke="#707070" stroke-width="2">
+      <rect width="53" height="53" stroke="none"/>
+      <rect x="1" y="1" width="51" height="51" fill="none"/>
+    </g>
+    <g id="Rectángulo_3" data-name="Rectángulo 3" transform="translate(292 87)" fill="#efece6" stroke="#707070" stroke-width="2">
+      <rect width="53" height="53" stroke="none"/>
+      <rect x="1" y="1" width="51" height="51" fill="none"/>
+    </g>
+    <g id="Rectángulo_4" data-name="Rectángulo 4" transform="translate(292 35)" fill="#efece6" stroke="#707070" stroke-width="2">
+      <rect width="53" height="53" stroke="none"/>
+      <rect x="1" y="1" width="51" height="51" fill="none"/>
+    </g>
+    <g id="Rectángulo_5" data-name="Rectángulo 5" transform="translate(240 87)" fill="#efece6" stroke="#707070" stroke-width="2">
+      <rect width="53" height="53" stroke="none"/>
+      <rect x="1" y="1" width="51" height="51" fill="none"/>
+    </g>
+    <text id="I" transform="translate(259.5 71.5)" fill="#707070" stroke="#707070" stroke-width="1" font-size="30" font-family="UbuntuMono-Bold, Ubuntu Mono" font-weight="700"><tspan x="0" y="0">I</tspan></text>
+    <text id="C" transform="translate(311.5 123.5)" fill="#707070" stroke="#707070" stroke-width="1" font-size="30" font-family="UbuntuMono-Bold, Ubuntu Mono" font-weight="700"><tspan x="0" y="0">C</tspan></text>
+  </g>
+</svg>

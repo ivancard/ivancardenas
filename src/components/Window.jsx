@@ -3,7 +3,9 @@ import '../scss/window.scss';
 export const Window = ({ children }) => {
     return (
         <div className='windows-container'>
-            <div className='window-back'></div>
+            <div className='window-back'>
+                <div className='state-bar-back'></div>
+            </div>
             <div className='window'>
                 <div className='state-window'>
                     <svg

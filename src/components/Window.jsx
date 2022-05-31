@@ -38,3 +38,6 @@ export const Window = ({ children }) => {
         </div>
     );
 };
+
+// TODO: Add Window.jsx to src/components/Window.jsx
+// FIXME: Add Window.jsx to src/components/Window.jsx

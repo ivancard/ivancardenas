@@ -1,0 +1,15 @@
+@import '../colors';
+
+.skill-item {
+    background-color: $bg-light;
+    border: 2px solid $text-secondary;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px 1px $shadow;
+    img {
+        width: 30px;
+    }
+}

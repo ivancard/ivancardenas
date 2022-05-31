@@ -1,7 +1,7 @@
 @import '../colors';
 
 .project-item-container {
-    border: 1px solid $text-secondary;
+    border: 2px solid $text-secondary;
     width: fit-content;
     // height: fit-content;
     border-radius: 5px;
@@ -31,21 +31,21 @@
             fill: $red;
             // margin: 3px;
             stroke: $text-secondary;
-            stroke-width: 1.5px;
+            stroke-width: 1px;
         }
         .bi-circle-fill2 {
             margin-top: 2px;
             // margin: 3px;
             fill: $yellow;
             stroke: $text-secondary;
-            stroke-width: 1.5px;
+            stroke-width: 1px;
         }
         .bi-circle-fill3 {
             margin-top: 2px;
             // margin: 3px;
             fill: $cyan;
             stroke: $text-secondary;
-            stroke-width: 1.5px;
+            stroke-width: 1px;
         }
     }
     img {

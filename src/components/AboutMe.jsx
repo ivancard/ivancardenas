@@ -10,7 +10,7 @@ const bgAboutMeStyle = {
 
 export const AboutMe = () => {
     return (
-        <section className='aboutme-container'>
+        <section className='aboutme-container' id='sobreMi'>
             <div className='bg-aboutme' style={bgAboutMeStyle}></div>
             <div className='skills-description'>
                 <div className='aboutme-description-container'>

@@ -1,4 +1,4 @@
-import skills from '../data';
+import skills from '../data/dataSkills';
 import { Skill } from './Skill';
 
 import '../scss/aboutme.scss';
@@ -15,7 +15,7 @@ export const AboutMe = () => {
             <div className='skills-description'>
                 <div className='aboutme-description-container'>
                     <div className='aboutme-description-text'>
-                        <h3 className='aboutme-description-title'>SobreMi</h3>
+                        <h3 className='aboutme-description-title'>Sobre Mi</h3>
                         <p>
                             Soy desarrollador de software enfocado al área web,
                             tanto back-end como front-end, siendo esta última mi

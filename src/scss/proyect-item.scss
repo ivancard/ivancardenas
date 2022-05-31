@@ -1,0 +1,54 @@
+@import '../colors';
+
+.project-item-container {
+    border: 1px solid $text-secondary;
+    width: fit-content;
+    // height: fit-content;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+    background-color: $bg-dark;
+    .view-more-button {
+        position: absolute;
+        bottom: -10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        button {
+            padding: 5px 25px;
+            background-color: $bg-light;
+            border: 2px solid $text-secondary;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    }
+    .state-project-item {
+        height: 20px;
+        border-bottom: 1px solid $text-secondary;
+        .bi-circle-fill {
+            margin-top: 2px;
+            margin-left: 5px;
+            fill: $red;
+            // margin: 3px;
+            stroke: $text-secondary;
+            stroke-width: 1.5px;
+        }
+        .bi-circle-fill2 {
+            margin-top: 2px;
+            // margin: 3px;
+            fill: $yellow;
+            stroke: $text-secondary;
+            stroke-width: 1.5px;
+        }
+        .bi-circle-fill3 {
+            margin-top: 2px;
+            // margin: 3px;
+            fill: $cyan;
+            stroke: $text-secondary;
+            stroke-width: 1.5px;
+        }
+    }
+    img {
+        width: 250px;
+    }
+}

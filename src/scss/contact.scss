@@ -1,0 +1,33 @@
+@import '../colors';
+
+.contact-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    h3 {
+        color: $text-primary;
+        font-size: 2rem;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    .contact-email {
+        font-size: 1.1rem;
+    }
+    .icons-container {
+        margin-top: 30px;
+        a {
+            color: $text-primary;
+            &:hover {
+                cursor: pointer;
+            }
+            &:visited {
+                color: $text-primary;
+            }
+            svg {
+                transform: scale(1.5);
+                width: 50px;
+            }
+        }
+    }
+}

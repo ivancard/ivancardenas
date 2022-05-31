@@ -36,17 +36,19 @@
         }
     }
     .children-container {
-        height: calc(100% - 25px);
+        // height: calc(100% - 25px);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
 .windows-container {
     position: relative;
-    height: 350px;
+    height: auto;
     width: 80%;
     max-width: 300px;
     margin-top: -30px;

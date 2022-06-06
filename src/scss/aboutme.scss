@@ -17,6 +17,10 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            height: 350px;
+        }
         .aboutme-description-container {
             margin-top: 24px;
             background-color: $bg-dark;
@@ -30,6 +34,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media (min-width: 768px) {
+                margin-top: 0;
+                margin-left: 100px;
+            }
             .aboutme-description-title {
                 position: absolute;
                 top: -10px;
@@ -43,6 +51,9 @@
                 font-weight: bold;
                 box-shadow: 2px 2px $bg-dark, 4px 4px $text-secondary,
                     2px 4px $text-secondary, 4px 2px $text-secondary;
+                @media (min-width: 768px) {
+                    font-size: 3rem;
+                }
             }
             .aboutme-description-text {
                 width: 80%;
@@ -54,6 +65,13 @@
                     &:last-child {
                         margin-top: 15px;
                     }
+                    @media (min-width: 768px) {
+                        font-size: 2rem;
+                        margin-top: 100px;
+                    }
+                }
+                @media (min-width: 768px) {
+                    width: 70%;
                 }
             }
             .more-aboutme {
@@ -83,6 +101,13 @@
             margin-bottom: 25px;
             z-index: 22;
             box-shadow: 3px 3px 7px $shadow;
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+                width: 30%;
+                margin-right: 100px;
+                height: 330px;
+                justify-content: center;
+            }
             h3 {
                 padding: 2px 40px;
                 font-size: 1.5rem;

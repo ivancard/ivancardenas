@@ -34,7 +34,7 @@ export const ProjectItem = ({
                         </p>
                         {site && (
                             <p className='links-site'>
-                                Probala
+                                Sitio
                                 <a href={site} target='_blank'>
                                     Aqui
                                 </a>

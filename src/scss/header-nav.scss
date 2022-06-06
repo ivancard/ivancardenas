@@ -11,8 +11,9 @@
     box-shadow: 3px 3px 7px $shadow;
     @media (min-width: 768px) {
         height: 800px;
-        margin: 30px;
+        margin: 100px;
         margin-top: 20px;
+        margin-bottom: 0;
     }
     .header-window-container {
         width: 100%;

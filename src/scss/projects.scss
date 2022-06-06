@@ -17,5 +17,22 @@
         font-weight: bold;
         box-shadow: 2px 2px $bg-dark, 4px 4px $text-secondary,
             2px 4px $text-secondary, 4px 2px $text-secondary;
+        @media (min-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+    .pojects-container {
+        @media (min-width: 768px) {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80%;
+            gap: 70px;
+            justify-content: center;
+        }
+    }
+    @media (min-width: 768px) {
+        margin-top: 70px;
     }
 }

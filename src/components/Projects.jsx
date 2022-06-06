@@ -14,7 +14,7 @@ export const Projects = () => {
                         img,
                         title,
                         description,
-                        tecnologies,
+                        technologies,
                         repository,
                         site,
                     }) => (
@@ -23,7 +23,7 @@ export const Projects = () => {
                             img={img}
                             title={title}
                             description={description}
-                            tecnologies={tecnologies}
+                            technologies={technologies}
                             repository={repository}
                             site={site}
                         />

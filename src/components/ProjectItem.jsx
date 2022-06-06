@@ -7,7 +7,7 @@ export const ProjectItem = ({
     img,
     title,
     description,
-    tecnologies,
+    technologies,
     repository,
     site,
 }) => {
@@ -22,8 +22,10 @@ export const ProjectItem = ({
                     <p className='p-modal'>{description}</p>
                     <div className='tecnologies-modal'>
                         <h2>Tecnologias usadas:</h2>
-                        {tecnologies.map((tec) => (
-                            <span className='tec'>{tec} </span>
+                        {technologies.map((tec, index) => (
+                            <span key={index} className='tec'>
+                                {tec}{' '}
+                            </span>
                         ))}
                     </div>
                     <div className='links'>

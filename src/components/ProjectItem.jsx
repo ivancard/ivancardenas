@@ -3,7 +3,14 @@ import { useModal } from '../hooks/useModal';
 import '../scss/proyect-item.scss';
 import { Modal } from './Modal';
 
-export const ProjectItem = ({ img, title, description, tecnologies }) => {
+export const ProjectItem = ({
+    img,
+    title,
+    description,
+    tecnologies,
+    repository,
+    site,
+}) => {
     const [modal, toggleModal] = useModal();
 
     return (
@@ -18,6 +25,21 @@ export const ProjectItem = ({ img, title, description, tecnologies }) => {
                         {tecnologies.map((tec) => (
                             <span className='tec'>{tec} </span>
                         ))}
+                    </div>
+                    <div className='links'>
+                        <p className='links-repo'>
+                            <a href={repository} target='_blank'>
+                                Repositorio
+                            </a>
+                        </p>
+                        {site && (
+                            <p className='links-site'>
+                                Probala
+                                <a href={site} target='_blank'>
+                                    Aqui
+                                </a>
+                            </p>
+                        )}
                     </div>
                 </Modal>
             )}

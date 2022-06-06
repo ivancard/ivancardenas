@@ -9,13 +9,23 @@ export const Projects = () => {
             <h3>Mis proyectos</h3>
             <div className='pojects-container'>
                 {projects.map(
-                    ({ id, img, title, description, tecnologies }) => (
+                    ({
+                        id,
+                        img,
+                        title,
+                        description,
+                        tecnologies,
+                        repository,
+                        site,
+                    }) => (
                         <ProjectItem
                             key={id}
                             img={img}
                             title={title}
                             description={description}
                             tecnologies={tecnologies}
+                            repository={repository}
+                            site={site}
                         />
                     )
                 )}

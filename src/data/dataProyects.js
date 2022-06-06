@@ -13,6 +13,8 @@ export default [
         description:
             'Web app de tareas. Donde puedes crear eliminar y marcar como realizadas tareas',
         tecnologies: ['React', 'HTML', 'CSS'],
+        repository: 'https://github.com/ivancard/todo-react',
+        site: 'https://ivancard.github.io/todo-react/',
     },
     {
         id: 2,
@@ -21,6 +23,8 @@ export default [
         description:
             'Web app que administra turnos de pacientes de un a veterinaria',
         tecnologies: ['JavaScript', 'HTML', 'CSS'],
+        repository: 'https://github.com/ivancard/administrador-citas',
+        site: 'https://ivancard.github.io/administrador-citas/',
     },
     {
         id: 3,
@@ -37,6 +41,8 @@ export default [
             'HTML',
             'CSS',
         ],
+        repository: 'https://github.com/ivancard/AgenciaTurismoTPOFinal',
+        site: '',
     },
     {
         id: 4,
@@ -44,6 +50,8 @@ export default [
         title: 'Gif Expert App',
         description: 'Web app que busca gifs desde la API de gihpy',
         tecnologies: ['React', 'HTML', 'CSS'],
+        repository: 'https://github.com/ivancard/gifexpert',
+        site: 'https://ivancard.github.io/gifexpert/',
     },
     {
         id: 5,
@@ -52,6 +60,8 @@ export default [
         description:
             'Web app que lista heroes de 2 empresas (Marvel y DC) y permite hacer busquedas de heroes',
         tecnologies: ['React', 'React router', 'HTML', 'CSS'],
+        repository: 'https://github.com/ivancard/heroes-app',
+        site: 'https://heroes-app-inky.vercel.app/',
     },
     {
         id: 6,
@@ -59,5 +69,7 @@ export default [
         title: 'Fundicion Garcia',
         description: 'Pagina web de una fundicion de aluminio',
         tecnologies: ['React', 'HTML', 'CSS'],
+        repository: 'https://github.com/ivancard/fundiciongarcia',
+        site: 'https://fundiciongarcia.vercel.app/',
     },
 ];

@@ -1,9 +1,9 @@
-import imgProject1 from '../assets/proyecto1.jpg';
-import imgProject2 from '../assets/proyecto2.jpg';
-import imgProject3 from '../assets/proyecto3.jpg';
-import imgProject4 from '../assets/proyecto4.jpg';
-import imgProject5 from '../assets/proyecto5.jpg';
-import imgProject6 from '../assets/proyecto6.jpg';
+import imgProject1 from '../assets/project-1-low.jpg';
+import imgProject2 from '../assets/project-2-low.jpg';
+import imgProject3 from '../assets/project-3-low.jpg';
+import imgProject4 from '../assets/project-4-low.jpg';
+import imgProject5 from '../assets/project-5-low.jpg';
+import imgProject6 from '../assets/project-6-low.jpg';
 
 export default [
     {

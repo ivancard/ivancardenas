@@ -3,7 +3,6 @@
 .aboutme-container {
     margin-top: 50px;
     position: relative;
-
     .bg-aboutme {
         position: absolute;
         height: 100%;
@@ -141,6 +140,23 @@
                 padding-top: 20px;
                 padding-bottom: 20px;
             }
+        }
+    }
+}
+
+.aboutme-modal-container {
+    margin-top: 40px;
+    padding: 0 10px;
+    p {
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .swipper-container {
+        margin-right: 30px;
+        margin-left: 30px;
+        img {
+            width: 100%;
         }
     }
 }

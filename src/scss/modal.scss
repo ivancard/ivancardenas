@@ -4,7 +4,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: blue;
     z-index: 99;
     width: 100vw;
     height: 100vh;
@@ -16,6 +15,9 @@
         border-radius: $radious;
         border: 3px solid $text-secondary;
         max-width: 1000px;
+        overflow-y: scroll;
+        z-index: 49;
+        position: relative;
         @media (min-width: 500px) {
             margin: 50px auto;
             height: calc(100vh - 10rem);
@@ -25,12 +27,30 @@
             border-bottom: 3px solid $text-secondary;
             display: flex;
             align-items: center;
+            position: fixed;
+            z-index: 52;
+            background-color: $bg-dark;
+            width: 89%;
+            max-width: 984px;
+            border-radius: 5px 5px 0 0;
             .bi-circle-fill {
                 margin-left: 10px;
                 fill: $red;
                 stroke: $text-secondary;
                 stroke-width: 1.5px;
+                cursor: pointer;
             }
         }
     }
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: $bg-dark;
+}
+::-webkit-scrollbar-thumb {
+    background: $bg-light;
+    border-radius: 10px;
 }

@@ -12,20 +12,28 @@ export const Projects = () => {
                     ({
                         id,
                         img,
+                        imgHigh,
                         title,
                         description,
                         technologies,
                         repository,
                         site,
+                        parrafs,
+                        videoUrl,
+                        imgExtra,
                     }) => (
                         <ProjectItem
                             key={id}
                             img={img}
+                            imgHigh={imgHigh}
                             title={title}
                             description={description}
                             technologies={technologies}
                             repository={repository}
                             site={site}
+                            parrafs={parrafs}
+                            videoUrl={videoUrl}
+                            imgExtra={imgExtra}
                         />
                     )
                 )}

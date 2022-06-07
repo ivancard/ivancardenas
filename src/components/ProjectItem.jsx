@@ -5,11 +5,15 @@ import { Modal } from './Modal';
 
 export const ProjectItem = ({
     img,
+    imgHigh,
     title,
     description,
     technologies,
     repository,
     site,
+    parrafs,
+    videoUrl,
+    imgExtra,
 }) => {
     const [modal, toggleModal] = useModal();
 
@@ -18,7 +22,9 @@ export const ProjectItem = ({
             {modal && (
                 <Modal toggleModal={toggleModal}>
                     <h1 className='title-modal'>{title}</h1>
-                    <img className='img-modal' src={img} alt={title} />
+                    <div className='img-modal-container'>
+                        <img className='img-modal' src={imgHigh} alt={title} />
+                    </div>
                     <p className='p-modal'>{description}</p>
                     <div className='tecnologies-modal'>
                         <h2>Tecnologias usadas:</h2>
@@ -42,6 +48,23 @@ export const ProjectItem = ({
                                 </a>
                             </p>
                         )}
+                        {videoUrl && (
+                            <p className='video-url'>
+                                Video de demostración y explicación{' '}
+                                <a href={videoUrl}>Aqui</a>
+                            </p>
+                        )}
+                    </div>
+                    <div className='extra-contain'>
+                        {parrafs[0] && <p>{parrafs[0]}</p>}
+                        {parrafs[1] && <p>{parrafs[1]}</p>}
+                        {imgExtra[0] && <img src={imgExtra[0]} />}
+                        {parrafs[2] && <p>{parrafs[2]}</p>}
+                        {imgExtra[1] && <img src={imgExtra[1]} />}
+                        {parrafs[3] && <p>{parrafs[3]}</p>}
+                        {imgExtra[2] && <img src={imgExtra[2]} />}
+                        {parrafs[4] && <p>{parrafs[4]}</p>}
+                        {imgExtra[3] && <img src={imgExtra[3]} />}
                     </div>
                 </Modal>
             )}

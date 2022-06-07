@@ -43,6 +43,7 @@ export default [
         site: 'https://ivancard.github.io/administrador-citas/',
         parrafs: [],
         videoUrl: false,
+        imgExtra: [],
     },
     {
         id: 3,

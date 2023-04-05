@@ -74,10 +74,10 @@
             font-size: 2rem;
           }
         }
-        .first-paragraph {
-          margin-top: 80px;
-        }
         @media (min-width: 768px) {
+          .first-paragraph {
+            margin-top: 80px;
+          }
           width: 70%;
         }
       }

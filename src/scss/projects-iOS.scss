@@ -1,0 +1,39 @@
+@import '../colors';
+
+.projects-ios-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+  background-color: red;
+  h3 {
+    font-size: 2rem;
+    background-color: $bg-light;
+    border: 2px solid $text-secondary;
+    color: $text-primary;
+    padding: 2px 40px;
+    padding-bottom: 8px;
+    border-radius: $radious;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 2px 2px $bg-dark, 4px 4px $text-secondary,
+      2px 4px $text-secondary, 4px 2px $text-secondary;
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+  .project-item-container {
+    background-color: green;
+    height: 280px;
+    @media (min-width: 768px) {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
+      gap: 70px;
+      justify-content: center;
+    }
+  }
+}

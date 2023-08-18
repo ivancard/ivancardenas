@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import '../scss/header-nav.scss';
 import { Window } from './Window';
 
-import fotoPerfil from '../assets/foto-perfilg.png';
+import fotoPerfil from '../assets/foto-perfil.png';
 
 const Path = (props) => (
   <motion.path

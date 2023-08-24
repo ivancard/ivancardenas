@@ -3,7 +3,7 @@ export const Skill = ({ title, img }) => {
   return (
     <div className='skill-item'>
       <img src={img} alt={title} />
-      <div class='skill-title'>{title}</div>
+      <div className='skill-title'>{title}</div>
     </div>
   );
 };

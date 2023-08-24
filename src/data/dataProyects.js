@@ -42,7 +42,7 @@ import imgProject3Extra4 from '../assets/project-3-4.jpg';
 
 export default [
   {
-    id: 16,
+    id: 17,
     img: imgIos11,
     imgPhone: gifIos1,
     title: 'Parking App',
@@ -120,7 +120,7 @@ export default [
     imgExtra: [],
   },
   {
-    id: 10,
+    id: 11,
     img: imgIos5,
     imgPhone: gifIos6,
     title: 'What guitar is',
@@ -133,7 +133,7 @@ export default [
     imgExtra: [],
   },
   {
-    id: 11,
+    id: 12,
     img: imgIos6,
     imgPhone: gifIos7,
     title: 'ToDo app con Realm',
@@ -146,7 +146,7 @@ export default [
     imgExtra: [],
   },
   {
-    id: 12,
+    id: 13,
     img: imgIos7,
     imgPhone: gifIos8,
     title: 'AR Oddish',
@@ -159,7 +159,7 @@ export default [
     imgExtra: [],
   },
   {
-    id: 13,
+    id: 14,
     img: imgIos8,
     imgPhone: gifIos9,
     title: 'H4X0R News',
@@ -174,7 +174,7 @@ export default [
     imgExtra: [imgIos12],
   },
   {
-    id: 14,
+    id: 16,
     img: imgIos9,
     imgHigh: imgIos13,
     title: 'Chat App',

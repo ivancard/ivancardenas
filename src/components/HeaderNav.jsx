@@ -207,7 +207,7 @@ export const HeaderNav = () => {
       )}
       <div className='header-window-container'>
         <Window>
-          //<img src={fotoPerfil} alt='foto de perfil' className='foto-perfil' />
+           {/* <img src={fotoPerfil} alt='foto de perfil' className='foto-perfil' /> */}
           <div className='window-text'>
             <h3>Hola, mi nombre es</h3>
             <h1>Ivan Cardenas</h1>

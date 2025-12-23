@@ -6,7 +6,7 @@ import '../scss/projects.scss';
 export const Projects = () => {
   return (
     <section className='proyects-global' id='proyectos'>
-      <h3>Mis proyectos web</h3>
+      <h3>Mis proyectos</h3>
       <div className='pojects-container'>
         {projects.map(
           ({

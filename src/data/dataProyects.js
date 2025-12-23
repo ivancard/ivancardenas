@@ -17,6 +17,8 @@ import imgIos10 from '../assets/ios-10.jpg';
 import imgIos11 from '../assets/ios-11.jpg';
 import imgIos12 from '../assets/iosProject10.png';
 import imgIos13 from '../assets/iosProject12.png';
+import imgIosMostaza from '../assets/ios-12.png';
+import imgIosMiBA from '../assets/ios-13.png';
 import gifIos1 from '../assets/iosGif1.gif';
 import gifIos2 from '../assets/iosGif2.gif';
 import gifIos3 from '../assets/iosGif3.gif';
@@ -28,6 +30,8 @@ import gifIos8 from '../assets/iosGif8.gif';
 import gifIos9 from '../assets/iosGif9.gif';
 import gifIos10 from '../assets/iosGif10.gif';
 import gifIos11 from '../assets/iosGif11.gif';
+import gifIos12 from '../assets/iosGif12.gif';
+import gifIos13 from '../assets/iosGif13.gif';
 import imgProject1High from '../assets/project-1.jpg';
 import imgProject2High from '../assets/project-2.jpg';
 import imgProject3High from '../assets/project-3.jpg';
@@ -41,6 +45,38 @@ import imgProject3Extra3 from '../assets/project-3-3.jpg';
 import imgProject3Extra4 from '../assets/project-3-4.jpg';
 
 export default [
+  {
+    id: 19,
+    img: imgIosMiBA,
+    imgPhone: gifIos12,
+    title: 'miBA',
+    description:
+      `Mantenimiento y desarrollo de nuevas funcionalidades en la aplicación del Gobierno de la
+Ciudad de Buenos
+Aires, en colaboración con el equipo de la Secretaría de Innovación y Transformación Digital.`,
+    technologies: ['Swift', 'UIKit', 'Biometria nativa', 'QuarkID', 'Blockchain', 'Firebase', 'Keychain'],
+    parrafs: [
+      'Participé en la implementación y desarrollo del sistema de identidad digital basado en tecnología blockchain, convirtiéndose en el primero de su tipo a nivel mundial.',
+      'Wallet de credenciales que permite a los usuarios almacenar y gestionar sus credenciales digitales de manera segura y soberana digitalmente. Gaurdandose a través de keychain.',
+'Se adapto la UI al sistema de diseño del gobierno de la ciudad de Buenos Aires.',
+'Se integro sdk de validacion de biometria. Para validar la identidad del usuario.',
+'Competencias clave: Liderazgo técnico, desarrollo de aplicaciones nativas, integración de métodos de pago, trabajo en equipos multidisciplinarios y mejora de procesos'
+],
+    videoUrl: false,
+    imgExtra: [],
+  },
+  {
+    id: 18,
+    img: imgIosMostaza,
+    imgPhone: gifIos13,
+    title: 'Mostaza',
+    description:
+      'Desarrollo desde cero de la aplicación oficial de la cadena de restaurantes Mostaza. Implementación de métodos de pago y optimización para maximizar el rendimiento de la aplicación. Teniendo como principal objetivo la funcionalidad de ecommerce y canjeo de cupones.',
+    technologies: ['Swift', 'UIKit', 'SwiftUI', 'GoogleMaps', 'Mercado-Pago', 'Firebase', 'Google analytics', 'Google Places'],
+    parrafs: [],
+    videoUrl: false,
+    imgExtra: [],
+  },
   {
     id: 17,
     img: imgIos11,

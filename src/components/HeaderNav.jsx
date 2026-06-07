@@ -60,7 +60,11 @@ export const HeaderNav = () => {
 
   return (
     <header className='header-container' id='header'>
-      <nav>
+      <motion.nav
+        initial={{ opacity: 0, y: -16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+      >
         {/* Logo */}
         <div className='logo'>
           <svg
@@ -183,7 +187,7 @@ export const HeaderNav = () => {
             </motion.svg>
           </button>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* Mobile dropdown */}
       {isOpen && (
@@ -212,7 +216,12 @@ export const HeaderNav = () => {
       )}
 
       {/* Hero window */}
-      <div className='header-window-container'>
+      <motion.div
+        className='header-window-container'
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+      >
         <Window>
           <div className='window-text'>
             <h3>{t.hero.greeting}</h3>
@@ -220,7 +229,7 @@ export const HeaderNav = () => {
             <h5>{t.hero.role}</h5>
           </div>
         </Window>
-      </div>
+      </motion.div>
     </header>
   );
 };

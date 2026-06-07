@@ -88,18 +88,7 @@
 }
 
 .button:after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  padding: 4px;
-  position: absolute;
-  bottom: -15px;
-  left: -4px;
-  z-index: -1;
-  background-color: var(--text-secondary);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  display: none;
 }
 
 /* Active section highlight */

@@ -76,8 +76,8 @@ export const AboutMe = () => {
           <div className='aboutme-skills-container'>
             <h3>{t.about.skills}</h3>
             <div className='aboutme-skills-list'>
-              {skills.map(({ id, title, img }) => (
-                <Skill key={id} title={title} img={img} />
+              {skills.map(({ id, title, img }, index) => (
+                <Skill key={id} title={title} img={img} index={index} />
               ))}
             </div>
           </div>

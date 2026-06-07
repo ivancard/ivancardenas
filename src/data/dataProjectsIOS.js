@@ -1,0 +1,232 @@
+import imgMiBA from '../assets/ios-13.png';
+import gifMiBA from '../assets/iosGif12.gif';
+import imgMostaza from '../assets/ios-12.png';
+import gifMostaza from '../assets/iosGif13.gif';
+import imgParking from '../assets/ios-11.jpg';
+import gifParking from '../assets/iosGif1.gif';
+import imgART from '../assets/ios-10.jpg';
+import gifART from '../assets/iosGif11.gif';
+import imgARDice from '../assets/ios-1.jpg';
+import gifARDice from '../assets/iosGif2.gif';
+import imgARRuler from '../assets/ios-2.jpg';
+import gifARRuler from '../assets/iosGif3.gif';
+import imgTipsy from '../assets/ios-3.jpg';
+import gifTipsy from '../assets/iosGif4.gif';
+import imgWeather from '../assets/ios-4.jpg';
+import gifWeather from '../assets/iosGif5.gif';
+import imgGuitar from '../assets/ios-5.jpg';
+import gifGuitar from '../assets/iosGif6.gif';
+import imgToDo from '../assets/ios-6.jpg';
+import gifToDo from '../assets/iosGif7.gif';
+import imgOddish from '../assets/ios-7.jpg';
+import gifOddish from '../assets/iosGif8.gif';
+import imgHackerNews from '../assets/ios-8.jpg';
+import gifHackerNews from '../assets/iosGif9.gif';
+import imgHackerNewsExtra from '../assets/iosProject10.png';
+import imgChat from '../assets/ios-9.jpg';
+import imgChatHigh from '../assets/iosProject12.png';
+import gifChatExtra from '../assets/iosGif10.gif';
+
+export default [
+  {
+    id: 1,
+    category: 'ios',
+    img: imgMiBA,
+    imgHigh: null,
+    imgPhone: gifMiBA,
+    title: 'miBA',
+    description: `Mantenimiento y desarrollo de nuevas funcionalidades en la aplicación del Gobierno de la Ciudad de Buenos Aires, en colaboración con el equipo de la Secretaría de Innovación y Transformación Digital.`,
+    technologies: ['Swift', 'UIKit', 'Biometría nativa', 'QuarkID', 'Blockchain', 'Firebase', 'Keychain'],
+    repository: null,
+    site: null,
+    videoUrl: null,
+    parrafs: [
+      'Participé en la implementación y desarrollo del sistema de identidad digital basado en tecnología blockchain, convirtiéndose en el primero de su tipo a nivel mundial.',
+      'Wallet de credenciales que permite a los usuarios almacenar y gestionar sus credenciales digitales de manera segura y soberana. Guardándose a través de keychain.',
+      'Se adaptó la UI al sistema de diseño del gobierno de la ciudad de Buenos Aires.',
+      'Se integró SDK de validación de biometría para validar la identidad del usuario.',
+      'Competencias clave: Liderazgo técnico, desarrollo de aplicaciones nativas, integración de métodos de pago, trabajo en equipos multidisciplinarios y mejora de procesos.',
+    ],
+    imgExtra: [],
+  },
+  {
+    id: 2,
+    category: 'ios',
+    img: imgMostaza,
+    imgHigh: null,
+    imgPhone: gifMostaza,
+    title: 'Mostaza',
+    description: 'Desarrollo desde cero de la aplicación oficial de la cadena de restaurantes Mostaza. Implementación de métodos de pago y optimización para maximizar el rendimiento de la aplicación. Teniendo como principal objetivo la funcionalidad de ecommerce y canjeo de cupones.',
+    technologies: ['Swift', 'UIKit', 'SwiftUI', 'GoogleMaps', 'Mercado Pago', 'Firebase', 'Google Analytics', 'Google Places'],
+    repository: null,
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 3,
+    category: 'ios',
+    img: imgParking,
+    imgHigh: null,
+    imgPhone: gifParking,
+    title: 'Parking App',
+    description: 'App para conductores que necesitan encontrar y reservar espacios para estacionar en la ciudad. Gracias a la integración de mapas de terceros, la aplicación permite a los usuarios ver en tiempo real los lugares disponibles, reservar y pagar por el espacio elegido. También permite actuar como prestador del servicio poniendo a disposición el propio espacio.',
+    technologies: ['Swift', 'UIKit', 'MapBox', 'Combine'],
+    repository: null,
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 4,
+    category: 'ios',
+    img: imgART,
+    imgHigh: null,
+    imgPhone: gifART,
+    title: 'ART Social Media',
+    description: 'Red social para artistas, donde pueden compartir sus obras y recibir feedback. Comprar y vender obras. Con sección de mensajería para comunicarse con otros artistas y convocatorias para colaborar en proyectos en común.',
+    technologies: ['Swift', 'UIKit', 'RxSwift', 'Firebase'],
+    repository: null,
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 5,
+    category: 'ios',
+    img: imgARDice,
+    imgHigh: null,
+    imgPhone: gifARDice,
+    title: 'AR Dice',
+    description: 'App de realidad aumentada que simula el lanzamiento de dados, con la posibilidad de agitarlos por botón o agitando el dispositivo.',
+    technologies: ['Swift', 'UIKit', 'ARKit', 'SceneKit'],
+    repository: 'https://github.com/ivancard/ARDice',
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 6,
+    category: 'ios',
+    img: imgARRuler,
+    imgHigh: null,
+    imgPhone: gifARRuler,
+    title: 'AR Ruler',
+    description: 'App de realidad aumentada que permite medir distancias seleccionando dos puntos en el espacio.',
+    technologies: ['Swift', 'UIKit', 'ARKit', 'SceneKit'],
+    repository: 'https://github.com/ivancard/ARRuler',
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 7,
+    category: 'ios',
+    img: imgTipsy,
+    imgHigh: null,
+    imgPhone: gifTipsy,
+    title: 'Tipsy',
+    description: 'App que permite calcular la división de una cuenta entre varias personas y el porcentaje de propina a pagar.',
+    technologies: ['Swift', 'UIKit'],
+    repository: 'https://github.com/ivancard/Tipsy-iOS',
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 8,
+    category: 'ios',
+    img: imgWeather,
+    imgHigh: null,
+    imgPhone: gifWeather,
+    title: 'Weather App',
+    description: 'App que muestra el clima de una ciudad dada, consumiendo una API y adaptando el estilo gráfico al tema del dispositivo (claro/oscuro).',
+    technologies: ['Swift', 'UIKit', 'URLSession'],
+    repository: 'https://github.com/ivancard/weather-iOS',
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 9,
+    category: 'ios',
+    img: imgGuitar,
+    imgHigh: null,
+    imgPhone: gifGuitar,
+    title: 'What Guitar Is',
+    description: 'App que identifica un modelo de guitarra al capturarla con la cámara. Se utilizó CreateML para entrenar el modelo con fotos de guitarras y CoreML para integrarlo en la app.',
+    technologies: ['Swift', 'UIKit', 'CoreML', 'CreateML'],
+    repository: 'https://github.com/ivancard/whatguitaris-iOS',
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 10,
+    category: 'ios',
+    img: imgToDo,
+    imgHigh: null,
+    imgPhone: gifToDo,
+    title: 'ToDo App con Realm',
+    description: 'App de lista de tareas utilizando Realm como base de datos local. También se desarrolló la misma app con CoreData.',
+    technologies: ['Swift', 'UIKit', 'Realm', 'CoreData'],
+    repository: 'https://github.com/ivancard/ToDo-Realm-iOS',
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 11,
+    category: 'ios',
+    img: imgOddish,
+    imgHigh: null,
+    imgPhone: gifOddish,
+    title: 'AR Oddish',
+    description: 'App de realidad aumentada que reconoce una imagen a través de la cámara y muestra un modelo 3D de un Pokémon en el espacio real.',
+    technologies: ['Swift', 'UIKit', 'ARKit', 'SceneKit'],
+    repository: 'https://github.com/ivancard/OddishAR',
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [],
+  },
+  {
+    id: 12,
+    category: 'ios',
+    img: imgHackerNews,
+    imgHigh: null,
+    imgPhone: gifHackerNews,
+    title: 'H4X0R News',
+    description: 'App de noticias que consume la API de Hacker News, desarrollada con SwiftUI.',
+    technologies: ['Swift', 'SwiftUI', 'URLSession'],
+    repository: 'https://github.com/ivancard/H4X0R-iOS',
+    site: null,
+    videoUrl: null,
+    parrafs: ['Utilizando Project Catalyst para compilar y usar la app en macOS.'],
+    imgExtra: [imgHackerNewsExtra],
+  },
+  {
+    id: 13,
+    category: 'ios',
+    img: imgChat,
+    imgHigh: imgChatHigh,
+    imgPhone: null,
+    title: 'Chat App',
+    description: 'App de chat utilizando Firebase como backend en tiempo real.',
+    technologies: ['Swift', 'UIKit', 'Firebase'],
+    repository: 'https://github.com/ivancard/chat-iOS',
+    site: null,
+    videoUrl: null,
+    parrafs: [],
+    imgExtra: [gifChatExtra],
+  },
+];

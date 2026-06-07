@@ -1,13 +1,15 @@
 @import '../colors';
 
 footer {
-    display: grid;
-    place-content: center;
-    background-color: $text-primary;
-    color: $bg-dark;
-    span {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 1.1rem;
-    }
+  display: grid;
+  place-content: center;
+  background-color: var(--text-primary);
+  color: var(--bg-dark);
+  transition: background-color 0.3s ease;
+
+  span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
 }

@@ -5,23 +5,63 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 768px) {
+    margin-top: 70px;
+  }
+
   h3 {
     font-size: 2rem;
-    background-color: $bg-light;
-    border: 2px solid $text-secondary;
-    color: $text-primary;
-    padding: 2px 40px;
-    padding-bottom: 8px;
+    background-color: var(--bg-light);
+    border: 2px solid var(--text-secondary);
+    color: var(--text-primary);
+    padding: 2px 40px 8px;
     border-radius: $radious;
-    font-size: 2rem;
     font-weight: bold;
-    box-shadow: 2px 2px $bg-dark, 4px 4px $text-secondary,
-      2px 4px $text-secondary, 4px 2px $text-secondary;
+    box-shadow: 2px 2px var(--bg-dark), 4px 4px var(--text-secondary),
+      2px 4px var(--text-secondary), 4px 2px var(--text-secondary);
+
     @media (min-width: 768px) {
       font-size: 3rem;
     }
   }
-  .pojects-container {
+
+  /* ── Filter tabs ── */
+  .projects-filter {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+
+    .filter-btn {
+      background-color: var(--bg-light);
+      color: var(--text-secondary);
+      border: 2px solid var(--text-secondary);
+      border-radius: 5px;
+      padding: 5px 22px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1.3rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+
+      &:hover {
+        background-color: var(--bg-dark);
+      }
+
+      &.active {
+        background-color: var(--text-secondary);
+        color: var(--bg-light);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+
+  /* ── Project grid ── */
+  .projects-container {
     @media (min-width: 768px) {
       margin-top: 50px;
       display: flex;
@@ -31,8 +71,5 @@
       gap: 70px;
       justify-content: center;
     }
-  }
-  @media (min-width: 768px) {
-    margin-top: 70px;
   }
 }

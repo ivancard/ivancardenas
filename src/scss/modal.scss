@@ -1,56 +1,107 @@
 @import '../colors';
 
 .modal-window {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.264);
-    .modal-container {
-        background-color: $bg-dark;
-        height: calc(100vh - 3rem);
-        margin: 15px;
-        border-radius: $radious;
-        border: 3px solid $text-secondary;
-        max-width: 1000px;
-        overflow-y: scroll;
-        z-index: 49;
-        position: relative;
-        @media (min-width: 500px) {
-            margin: 50px auto;
-            height: calc(100vh - 10rem);
-        }
-        .state-bar-modal {
-            height: 35px;
-            border-bottom: 3px solid $text-secondary;
-            display: flex;
-            align-items: center;
-            position: fixed;
-            z-index: 52;
-            background-color: $bg-dark;
-            width: 89%;
-            max-width: 984px;
-            border-radius: 5px 5px 0 0;
-            .bi-circle-fill {
-                margin-left: 10px;
-                fill: $red;
-                stroke: $text-secondary;
-                stroke-width: 1.5px;
-                cursor: pointer;
-            }
-        }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
+  .modal-container {
+    background-color: var(--bg-dark);
+    height: calc(100vh - 3rem);
+    width: 100%;
+    margin: 15px;
+    border-radius: $radious;
+    border: 3px solid var(--text-secondary);
+    max-width: 1000px;
+    overflow-y: auto;
+    position: relative;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.25);
+
+    @media (min-width: 500px) {
+      margin: 50px auto;
+      height: calc(100vh - 10rem);
     }
-}
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    border-radius: 5px;
-    background: $bg-dark;
-}
-::-webkit-scrollbar-thumb {
-    background: $bg-light;
-    border-radius: 10px;
+
+    /* Scrollbar scoped al modal */
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--bg-light-hover);
+      border-radius: 10px;
+    }
+
+    .state-bar-modal {
+      height: 40px;
+      border-bottom: 3px solid var(--text-secondary);
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background-color: var(--bg-dark);
+      border-radius: $radious $radious 0 0;
+      transition: background-color 0.3s ease;
+
+      .modal-close-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin-left: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: relative;
+        width: 20px;
+        height: 20px;
+
+        &:focus-visible {
+          outline: 2px solid var(--text-secondary);
+          outline-offset: 3px;
+        }
+
+        .bi-circle-fill {
+          fill: var(--red);
+          stroke: var(--text-secondary);
+          stroke-width: 1.5px;
+          transition: fill 0.15s ease;
+        }
+
+        /* X visible al hover */
+        &::after {
+          content: '✕';
+          position: absolute;
+          font-size: 9px;
+          font-weight: bold;
+          color: rgba(0, 0, 0, 0.5);
+          pointer-events: none;
+          opacity: 0;
+          transition: opacity 0.15s ease;
+        }
+
+        &:hover .bi-circle-fill {
+          fill: #e05252;
+        }
+
+        &:hover::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }

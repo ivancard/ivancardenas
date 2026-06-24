@@ -14,7 +14,7 @@ export const MiFooter = () => {
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
-      <span>{t.footer.credit} — 2025</span>
+      <span>{t.footer.credit} — 2026</span>
     </motion.footer>
   );
 };

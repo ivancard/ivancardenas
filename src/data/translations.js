@@ -9,6 +9,7 @@ export const translations = {
     hero: {
       greeting: 'Hola, mi nombre es',
       role: 'iOS Developer',
+      downloadCV: 'Descargar CV',
     },
     about: {
       title: 'Sobre Mi',
@@ -62,6 +63,7 @@ export const translations = {
     hero: {
       greeting: 'Hi, my name is',
       role: 'iOS Developer',
+      downloadCV: 'Download CV',
     },
     about: {
       title: 'About Me',

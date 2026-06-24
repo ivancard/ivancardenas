@@ -5,6 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ivan Cardenas web</title>
+    <!-- Apply persisted theme before paint to avoid a flash of light mode -->
+    <script>
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    </script>
     <!-- Google tag (gtag.js) -->
     <script
       async

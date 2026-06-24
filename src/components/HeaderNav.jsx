@@ -4,6 +4,7 @@ import '../scss/header-nav.scss';
 import { Window } from './Window';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
+import cvPdf from '../assets/Ivan-Cardenas-iOS-Dev-CV.pdf';
 
 const Path = (props) => (
   <motion.path
@@ -20,16 +21,24 @@ const SECTION_IDS = ['header', 'sobreMi', 'proyectos', 'contacto'];
 export const HeaderNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('header');
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    () => localStorage.getItem('theme') === 'dark'
+  );
   const { lang, toggleLang } = useLanguage();
   const t = translations[lang];
 
-  // Sync dark mode with document
+  // Sync dark mode with document + persist the choice.
+  // Only dark mode is stored; light mode clears the key so nothing is saved.
   useEffect(() => {
     document.documentElement.setAttribute(
       'data-theme',
       darkMode ? 'dark' : 'light'
     );
+    if (darkMode) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.removeItem('theme');
+    }
   }, [darkMode]);
 
   // Track active section via scroll position
@@ -227,6 +236,18 @@ export const HeaderNav = () => {
             <h3>{t.hero.greeting}</h3>
             <h1>Ivan Cardenas</h1>
             <h5>{t.hero.role}</h5>
+            <a
+              className='download-cv'
+              href={cvPdf}
+              download='Ivan-Cardenas-iOS-Dev-CV.pdf'
+            >
+              <svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
+                <path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' />
+                <polyline points='7 10 12 15 17 10' />
+                <line x1='12' y1='15' x2='12' y2='3' />
+              </svg>
+              {t.hero.downloadCV}
+            </a>
           </div>
         </Window>
       </motion.div>

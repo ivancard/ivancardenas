@@ -11,16 +11,21 @@ export const ProjectItem = ({
   imgPhone,
   title,
   description,
+  descriptionEn,
   technologies,
   repository,
   site,
   parrafs,
+  parrafsEn,
   videoUrl,
   imgExtra,
 }) => {
   const [modal, toggleModal] = useModal();
   const { lang } = useLanguage();
   const t = translations[lang];
+
+  const localizedDescription = lang === 'en' && descriptionEn ? descriptionEn : description;
+  const localizedParrafs = lang === 'en' && parrafsEn ? parrafsEn : parrafs;
 
   return (
     <>
@@ -46,7 +51,7 @@ export const ProjectItem = ({
               />
             )}
           </div>
-          <p className='p-modal'>{description}</p>
+          <p className='p-modal'>{localizedDescription}</p>
           <div className='tecnologies-modal'>
             <h2>{t.projects.technologies}</h2>
             {technologies.map((tec, index) => (
@@ -79,7 +84,7 @@ export const ProjectItem = ({
             )}
           </div>
           <div className='extra-contain'>
-            {parrafs.map((p, i) => <p key={i}>{p}</p>)}
+            {localizedParrafs.map((p, i) => <p key={i}>{p}</p>)}
             {imgExtra.map((src, i) => (
               <img key={i} src={src} alt={`${title} extra ${i + 1}`} loading='lazy' />
             ))}

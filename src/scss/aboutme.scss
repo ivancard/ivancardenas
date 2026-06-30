@@ -99,17 +99,22 @@
       .more-aboutme {
         margin-top: 15px;
         background-color: var(--bg-light);
-        border: 1px solid var(--text-secondary);
+        border: 2px solid var(--text-secondary);
         color: var(--text-secondary);
         padding: 5px 15px;
         border-radius: 5px;
         font-size: 0.9rem;
+        font-weight: bold;
         cursor: pointer;
         font-family: 'Roboto Mono', monospace;
-        transition: background-color 0.2s ease;
+        transition: background-color 0.2s ease, color 0.2s ease, border-color 0.3s ease;
 
         &:hover {
           background-color: var(--bg-light-hover);
+        }
+
+        [data-theme='dark'] & {
+          color: var(--accent);
         }
 
         @media (min-width: 768px) {

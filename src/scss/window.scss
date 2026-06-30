@@ -15,23 +15,37 @@
     height: 25px;
     display: flex;
     align-items: center;
+    gap: 2px;
+    padding-left: 10px;
     border-bottom: 2px solid var(--text-secondary);
 
+    svg {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+    }
     .bi-circle-fill {
-      margin-left: 5px;
       fill: var(--red);
-      stroke: var(--text-secondary);
-      stroke-width: 1.5px;
+      stroke: none;
     }
     .bi-circle-fill2 {
       fill: var(--yellow);
-      stroke: var(--text-secondary);
-      stroke-width: 1.5px;
+      stroke: none;
     }
     .bi-circle-fill3 {
       fill: var(--cyan);
-      stroke: var(--text-secondary);
-      stroke-width: 1.5px;
+      stroke: none;
+    }
+
+    @media (max-width: 768px) {
+      height: 22px;
+      gap: 1px;
+      padding-left: 8px;
+
+      svg {
+        width: 13px;
+        height: 13px;
+      }
     }
   }
 

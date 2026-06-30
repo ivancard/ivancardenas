@@ -31,36 +31,42 @@
       font-weight: bold;
       font-family: 'Roboto Mono', monospace;
       cursor: pointer;
-      transition: background-color 0.2s ease;
+      transition: background-color 0.2s ease, color 0.2s ease, border-color 0.3s ease;
 
       &:hover {
         background-color: var(--bg-light-hover);
+      }
+
+      [data-theme='dark'] & {
+        color: var(--accent);
       }
     }
   }
 
   .state-project-item {
     height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding-left: 7px;
     border-bottom: 2px solid var(--text-secondary);
 
+    svg {
+      width: 13px;
+      height: 13px;
+      flex-shrink: 0;
+    }
     .bi-circle-fill {
-      margin-top: 2px;
-      margin-left: 5px;
       fill: var(--red);
-      stroke: var(--text-secondary);
-      stroke-width: 1px;
+      stroke: none;
     }
     .bi-circle-fill2 {
-      margin-top: 2px;
       fill: var(--yellow);
-      stroke: var(--text-secondary);
-      stroke-width: 1px;
+      stroke: none;
     }
     .bi-circle-fill3 {
-      margin-top: 2px;
       fill: var(--cyan);
-      stroke: var(--text-secondary);
-      stroke-width: 1px;
+      stroke: none;
     }
   }
 

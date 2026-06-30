@@ -8,23 +8,25 @@
   --bg-light-hover: #d5cfc0;
   --text-primary: #404040;
   --text-secondary: #707070;
-  --cyan: #c7efe7;
-  --yellow: #efe4bf;
-  --red: #e5c6c2;
+  --accent: #404040;
+  --btn-top-highlight: #ffffff;
+  /* macOS-style window controls (shared across themes) */
+  --red: #ff5f57;
+  --yellow: #febc2e;
+  --cyan: #28c840;
   --shadow: rgba(49, 49, 49, 0.341);
 }
 
 [data-theme='dark'] {
-  --bg-dark: #1e1c18;
-  --bg-darker: #16140f;
-  --bg-light: #2a2824;
-  --bg-light-hover: #3a3835;
-  --text-primary: #e8e4dc;
-  --text-secondary: #9a9590;
-  --cyan: #1a3d39;
-  --yellow: #3d3515;
-  --red: #3d1e1a;
-  --shadow: rgba(0, 0, 0, 0.5);
+  --bg-dark: #141823;
+  --bg-darker: #0e1119;
+  --bg-light: #1b2030;
+  --bg-light-hover: #272d3e;
+  --text-primary: #ece5d6;
+  --text-secondary: #828a9b;
+  --accent: #e0a84c;
+  --btn-top-highlight: rgba(255, 255, 255, 0.07);
+  --shadow: rgba(0, 0, 0, 0.6);
 }
 
 /* ── Reset ── */

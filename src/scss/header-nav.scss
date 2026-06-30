@@ -51,16 +51,17 @@
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        background-color: var(--bg-dark);
-        border: 1px solid var(--text-secondary);
+        background-color: var(--bg-light);
+        border: 2px solid var(--text-secondary);
         color: var(--text-secondary);
         padding: 4px 12px;
         border-radius: 5px;
         font-size: 0.85rem;
+        font-weight: bold;
         font-family: 'Roboto Mono', monospace;
         text-decoration: none;
         cursor: pointer;
-        transition: background-color 0.2s ease, border-color 0.3s ease;
+        transition: background-color 0.2s ease, color 0.2s ease, border-color 0.3s ease;
 
         svg {
           width: 1em;
@@ -96,9 +97,9 @@
   position: relative;
   padding: 20px 40px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-box-shadow: inset 0 1px 0 white, 0 10px 0 var(--bg-darker);
-  -moz-box-shadow: inset 0 1px 0 white, 0 10px 0 var(--bg-darker);
-  box-shadow: inset 0 1px 0 white, 0 10px 0 var(--bg-darker);
+  -webkit-box-shadow: inset 0 1px 0 var(--btn-top-highlight), 0 10px 0 var(--bg-darker);
+  -moz-box-shadow: inset 0 1px 0 var(--btn-top-highlight), 0 10px 0 var(--bg-darker);
+  box-shadow: inset 0 1px 0 var(--btn-top-highlight), 0 10px 0 var(--bg-darker);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -120,6 +121,21 @@
 /* Active section highlight */
 .button.active a {
   color: var(--text-primary);
+}
+
+/* Gold accent in dark mode (active nav + CV button); light mode stays neutral */
+[data-theme='dark'] {
+  .button.active a {
+    color: var(--accent);
+  }
+
+  .window-text .download-cv {
+    color: var(--accent);
+  }
+
+  .lang-toggle {
+    color: var(--accent);
+  }
 }
 
 /* ── Top nav bar ── */
@@ -162,10 +178,10 @@
     font-size: 1.1rem;
     font-weight: bold;
     padding: 4px 10px;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.3s ease;
 
     &:hover {
-      background-color: var(--bg-darker);
+      background-color: var(--bg-light-hover);
     }
 
     @media (max-width: 768px) {

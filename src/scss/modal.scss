@@ -77,8 +77,7 @@
 
         .bi-circle-fill {
           fill: var(--red);
-          stroke: var(--text-secondary);
-          stroke-width: 1.5px;
+          stroke: none;
           transition: fill 0.15s ease;
         }
 
